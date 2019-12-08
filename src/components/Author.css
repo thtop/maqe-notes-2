@@ -1,0 +1,26 @@
+.Author {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2;
+
+  border-left: 1px solid #ccc;
+}
+
+.Author-detail {
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.Author-img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.Author-name {
+  color: rgb(194, 15, 15);
+  font-weight: 700;
+}
+
+.Author-role {
+  font-weight: 700;
+}

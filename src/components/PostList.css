@@ -1,0 +1,46 @@
+.PostList {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.PostList-container {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+
+  -webkit-box-shadow: 0px 9px 5px -4px rgba(222, 222, 222, 1);
+  -moz-box-shadow: 0px 9px 5px -4px rgba(222, 222, 222, 1);
+  box-shadow: 0px 9px 5px -4px rgba(222, 222, 222, 1);
+}
+
+.PostList-container.bg {
+  background: #f0f0f0;
+}
+
+.PostList-box {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.PostList-box-content {
+  padding-left: 2rem;
+}
+
+.PostList-box-img {
+  width: 200px;
+  height: 150px;
+}
+
+.far.fa-clock {
+  font-size: 1.2rem;
+}
+.PostList-box-time {
+  margin-top: 1.5rem;
+  color: rgb(160, 159, 159);
+}

@@ -1,0 +1,37 @@
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Pagination-previous {
+  color: black;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+.Pagination-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 2px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.Pagination-number.active {
+  color: white;
+  background-color: #c8342f;
+}
+
+.Pagination-next {
+  margin-left: 1.5rem;
+  color: black;
+  text-decoration: none;
+}

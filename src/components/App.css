@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 62.5%; /*1 rem = 10px, 10px/16px = 62.5% */
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.App-container {
+  max-width: 126.5rem;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.App-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.App-subtitle {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.App-title-post {
+  font-size: 2rem;
+  font-weight: 500;
+}
