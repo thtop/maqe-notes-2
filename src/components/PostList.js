@@ -12,20 +12,21 @@ class PostList extends React.Component {
   }
 
   renderList() {
-    // sort post
+    // sort posts by created_at
     const sortPost = this.props.posts.sort(
       (a, b) => a.created_at - b.created_at
     );
 
-    // filter post per page
+    // filter post per page (8 posts per 1 page)
     const filterPost = sortPost.filter(post => post.id <= 8);
 
     return filterPost.map(post => {
       const splitDate = post.created_at.split(' ');
 
       // replace with current year
+      const year = new Date().getFullYear();
       const regex = /2017/;
-      const currentYear = splitDate[0].replace(regex, '2019');
+      const currentYear = splitDate[0].replace(regex, year);
 
       return (
         <div className="PostList" key={post.id}>
