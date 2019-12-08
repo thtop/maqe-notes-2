@@ -12,29 +12,21 @@ class PostList extends React.Component {
   }
 
   renderList() {
-    // static contents for display only
-    //const postsTest = this.props.posts.filter(post => post.id <= 8);
-    // const moment = [
-    //   '1 week ago',
-    //   '2 weeks ago',
-    //   '3 weeks ago',
-    //   '4 weeks ago',
-    //   '4 weeks ago',
-    //   '2 months ago',
-    //   '2 months ago',
-    //   '4 months ago'
-    // ];
-
     // sort post
     const sortPost = this.props.posts.sort(
       (a, b) => a.created_at - b.created_at
     );
 
-    // filter post
+    // filter post per page
     const filterPost = sortPost.filter(post => post.id <= 8);
 
     return filterPost.map(post => {
       const splitDate = post.created_at.split(' ');
+
+      // replace with current year
+      const regex = /2017/;
+      const currentYear = splitDate[0].replace(regex, '2019');
+
       return (
         <div className="PostList" key={post.id}>
           <div
@@ -56,7 +48,7 @@ class PostList extends React.Component {
 
                 <p className="PostList-box-time">
                   <i className="far fa-clock"></i>{' '}
-                  {moment(splitDate[0], 'YYYY-MM-DD').fromNow()}
+                  {moment(currentYear, 'YYYY-MM-DD').fromNow()}
                 </p>
               </div>
             </div>

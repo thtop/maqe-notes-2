@@ -34,7 +34,7 @@ class Author extends React.Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = state => {
   return { authors: state.authors };
 };
 
